@@ -34,7 +34,7 @@ contract Alyra is ERC721, ERC721Enumerable, Ownable {
 
     function isWhitelisted(address _account, bytes32[] calldata _proof) internal view returns(bool) {
         bytes32 leaf = keccak256(abi.encode(keccak256(abi.encode(_account))));
-        return MerkleProof.verify(_proof, merkleRoot, leaf);
+        //*** à compléter ***//
     }
 
     // The following functions are overrides required by Solidity.

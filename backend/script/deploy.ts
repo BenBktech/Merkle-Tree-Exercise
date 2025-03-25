@@ -7,7 +7,7 @@ async function main() {
         ["0x70997970C51812dc3A010C7d01b50e0d17dc79C8"],
         ["0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"],
     ];
-    const merkleTree = StandardMerkleTree.of(whitelisted, ["address"], { sortLeaves: true });
+    //*** à compléter ***//
     console.log(`Racine de l'arbre de Merkle : ${merkleTree.root}`);
 
     const [owner] = await ethers.getSigners();
